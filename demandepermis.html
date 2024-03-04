@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eDrive Belgique-Demande-Permis-De-Conduire</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styledemande.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="acceuil.html" translate="no">
+            <img src="images/IMG-20231211-WA0001.png" alt="Image Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <strong>  eDrive Belgique</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div id="navbarScroll"> 
+            <ul class="navbar-nav text-align-left justify-content-start  align-items-start  ">
+              <li class="nav-item">
+                <a class="" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class=" active" aria-current="page" href="demandepermis.html">Faire une demande</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="paiement.html">Effectuer un paiement</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="contact.html">Aide & Contact</a>
+              </li>
+              
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <h1>Demander la fabrication de votre permis de conduire</h1>
+
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+              <h3 class="mb-0">Première demande de permis, Perte ou vol de permis, Remplacement ou renouvellement du permis, Changement d'état civil, Signalement d'une erreur...</h3>
+              <h3 class="fw-light fs-5">Toutes les démarches en ligne et en quelques minutes seulement.</h3>
+      
+              <div class="row gy-4 mt-4 align-items-center">
+                
+                  <div class="col-12 col-md-5">
+                    <img src="images/imgIdentite.jpg" alt="Image format identité" width="100%">
+                  </div>
+    
+                
+                
+    
+                <div class="col-12 offset-md-1 col-md-6">
+                  <div class=" h-100 w-100 py-5">
+                    <form action="https://getform.io/f/vbmAYRbY" method="POST" enctype="multipart/form-data">
+                      <input type="hidden" name="_gotcha" style="display:none !important">
+                      <input type="hidden" name="subject" value="Nouvelle demande de permis" />
+                      <input type="hidden" name="redirect" value="acceuil.html">
+    
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="prenom" class="form-label">Prénom(s)</label>
+                                <input type="text" id="prenom" name="prenom" class="form-control" required>
+                            </div>
+                            <div class="col">
+                                <label for="nom" class="form-label">Nom(s)</label>
+                                <input type="text" id="nom" name="nom" class="form-control" required>
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                          
+                          <div class="col">
+                              <label for="dateNaissance" class="form-label">Date de naissance</label>
+                              <input type="date" id="date" name="dateNaissance" class="form-control" required>
+                          </div>
+    
+                          <div class="col">
+                              <label for="lieuNaissance" class="form-label">Lieu de naissance</label>
+                              <input type="text" id="lieuNaissance" name="lieuNaissance" class="form-control" required>
+                          </div>
+                      </div>
+    
+                      <div class="mb-3">
+                        <label for="adresse" class="form-label">Adresse de domicile</label>
+                        <input type="text" id="adresse" name="adresse" class="form-control" required>
+                      </div>
+    
+                      <div class="row mb-3">
+                          
+                        <div class="col">
+                            <label for="ville" class="form-label">Ville</label>
+                            <input type="text" id="ville" name="ville" class="form-control" required>
+                        </div>
+    
+                        <div class="col">
+                            <label for="codePostal" class="form-label">Code postal</label>
+                            <input type="text" id="codePostal" name="codePostal" class="form-control" required>
+                        </div>
+    
+                        <div class="col">
+                          <label for="pays" class="form-label">Pays</label>
+                          <input type="text" id="pays" name="pays" class="form-control" required>
+    
+                        </div>
+    
+                      </div>
+    
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Adresse Email</label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="categorie-permis" class="form-label">Type de demande</label>
+                      <select id="categorie-permis" class="form-select" required>
+                        <option selected value=""> Sellectionner le type de damande</option>
+                        <option value="Première demande de permis de conduire">Première demande de permis de conduire</option>
+                        <option value="Remplacement ou Renouvellement de permis de conduire">Remplacement ou Renouvellement de permis de conduire</option>
+                        <option value="Echange de permis de conduire">Echange de permis de conduire</option>
+                        <option value="Demande de permis de conduire international">Demande de permis de conduire international</option>
+                        <option value="Signaler une erreur sur votre permis">Signaler une erreur sur votre permis</option>
+                        <option value="Demande de permis de conduire numérique">Demande de permis de conduire numérique</option>
+                        
+                      </select>
+                      
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="categorie-permis" class="form-label">Catégorie de Permis</label>
+                      <select id="categorie-permis" class="form-select" required>
+                      <option selected>Choisir la catégorie de permis</option>
+                      <option value="AM">AM</option>
+                      <option value="A1">A1</option>
+                      <option value="A2 ">A2</option>
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C1">C1</option>
+                      <option value="C">C</option>
+                      <option value="D1">D1</option>
+                      <option value="D">D</option>
+                      <option value="BE">BE</option>
+                      <option value="C1E">C1E</option>
+                      <option value="CE">CE</option>
+                      <option value="D1E">D1E</option>
+                      <option value="DE">DE</option>
+                      <option value="G">G</option>
+                      </select>
+                      
+                    </div>
+    
+                    <div class="row mb-3">
+                          
+                      <div class="col-12 col-md-6">
+                          <label for="image-recto" class="form-label">Photo recto de pièce votre d'identité</label>
+                          <input type="file" id="image-recto" name="image-recto" class="form-control" accept=".jpeg, .jpg, .png, .pdf" required>
+                      </div>
+    
+                      <div class="col-12 col-md-6 ">
+                          <label for="image-verso" class="form-label">Photo verso votre pièce d'identité</label>
+                          <input type="file" id="image-verso" name="image-verso" class="form-control"  accept=".jpeg, .jpg, .png, .pdf" required>
+                      </div>
+    
+                      <div class="col-12 col-md-6 mt-3">
+                        <label for="image-justificatif-domicile" class="form-label">Justificatif de domicile de moins de 3 mois</label>
+                        <input type="file" id="image-justificatif-domicile" name="image-justificatif-domicile" class="form-control"  accept=".jpeg, .jpg, .png, .pdf" required>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="row mb-3">
+                          
+                      <div class="col-12 col-md-6">
+                          <label for="image-identite" class="form-label">Une photo d'identité lisible au format 4x4</label>
+                          <input type="file" id="image-identite" name="image-identite" class="form-control"  accept=".jpeg, .jpg, .png, .pdf" required>
+                      </div>
+    
+                      <div class="col-12 col-md-6">
+                          <label for="image-signature" class="form-label">Photo de votre signature sur feuille blanche</label>
+                          <input type="file" id="image-signature" name="image-signature" class="form-control"  accept=".jpeg, .jpg, .png, .pdf" required>
+                      </div>
+    
+                    </div>
+                    <div class="mt-5">
+                      <button id="button" type="submit" class="btn bg-premier w-100" data-bs-toggle="modal" data-bs-target="#btnDemande">Soumettre ma demande</button>
+                    </div>
+    
+                    
+    
+                    </form>
+
+                    <div class="modal fade" id="btnDemande" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="staticBackdropLabel">Message de confirmation</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                    
+                              <h5 class="modal-title text-success " id="#">Envoi reussir</h5>
+                              <p>Cher client, Votre demande a bien été soumise, afin qu'elle soit prise en charge et traitée, 
+                                veuillez procéder au paiement par virement bancaire. Cliquer sur le bouton <a href="paiement.html"><strong>"Payer"</strong></a> pour 
+                                être rediriger vers la page où est indiquée les coordonnées bancaire ou cliquer sur le bouton <strong>Effectuer un paiement</strong> dans
+                                 le menu de navigation. <br> Merci !!!</p>
+                    
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <a href="paiement.html"><button type="button" class="btn btn-primary" name="redirect" value="">Payer</button></a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    
+        
+    </main>
+    <footer>
+        
+      <div class="container py-2 py-md-4 ">
+          
+          <div class="row align-items-center">
+              <div class="col-12 col-md-4 text-md-start">
+                  
+                <p translate="no"><img src="images/IMG-20231211-WA0001.png" alt="Image Logo"><strong><a href="acceuil.html">  eDrive Belgigue</a></strong></p>
+                  
+              </div>
+
+              <div class="col-12 col-md-4 text-md-center">
+                  <div>
+                      <p><a href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mentions légales</a></p>
+                  </div>
+              </div>
+
+
+              <div class="col-12 col-md-4 text-md-end ">
+                  <div>
+                      <ul>
+                          <li><a href="https://www.facebook.com/profile.php?id=61554415834459" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                          <li><a href="https://wa.me/32460240485" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                          <li><a href="https://g.co/kgs/MRN9Ft" target="_blank"><i class="bi bi-google"></i></a></li>
+                          
+                      </ul>
+                      
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="row align-items-center ">
+              <div class="col-12 text-md-center">
+                  <div>
+                      <p>© Tous droits réservés eDrive Belgique</p>
+                  </div>
+              </div>
+          </div>
+
+          
+
+
+      </div>
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="staticBackdropLabel">Mentions légales</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+        
+                  <h5 class="modal-title" id="#">Informations éditeurs</h5>
+                  <p>Le site internet de eDrive Belgique est édité et géré par eDrive Belgique.<br><strong>10 rue magnette Virton 6760, Belgique</strong></p><br>
+        
+                  <h5 class="modal-title" id="#">Directeur de la publication</h5>
+                  <p>Mr Philippe Chebil - Directeur de eDrive Belgique.</p><br>
+        
+                  <h5 class="modal-title" id="#">Hébergement</h5> 
+                  <p>L'hébergement et les développements du site sont assurés par la société Docaposte :<br><strong>DOCAPOSTE <br>45/47 boulevard Paul Vaillant Couturier 94200 Ivry-sur-Seine</strong></p><br>
+        
+                  <h5 class="modal-title" id="#">Droit d’auteur</h5>
+                  <p>Tous droits réservés eDrive Belgique</p><br>
+        
+                  <h5 class="modal-title" id="#">Politique de confidentialité - Utilisation de cookies</h5>
+                  <p>Pour plus d’informations, vous pouvez consulter notre politique de confidentialité en cliquant ici: <a target="_blank" href="#">Politique de confidentialité</a>
+                      
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary">Accepter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+  </footer>
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+              crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+    
+    
+</body>
+</html>
